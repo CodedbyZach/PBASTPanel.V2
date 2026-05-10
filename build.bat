@@ -1,24 +1,15 @@
 @echo off
 SETLOCAL
 
-where selene >nul 2>nul
-IF %ERRORLEVEL% NEQ 0 (
-	SET SELENE_COMMAND=.\selene.exe
-) ELSE (
-	SET SELENE_COMMAND=selene
+echo Checking for lint errors with Selene...
+aftman run selene ./MainModule ./Loader
+
+if %ERRORLEVEL% NEQ 0 (
+    echo Linting failed.
+    exit /b %ERRORLEVEL%
 )
 
-where rojo >nul 2>nul
-IF %ERRORLEVEL% NEQ 0 (
-	SET ROJO_COMMAND=.\rojo.exe
-) ELSE (
-	SET ROJO_COMMAND=rojo
-)
-
-echo Checking for lint errors with %SELENE_COMMAND% from ./Loader and ./MainModule 
-%SELENE_COMMAND% ./MainModule ./Loader
-
-echo Running %ROJO_COMMAND% build -o PBAST.rbxm
-%ROJO_COMMAND% build -o PBAST.rbxm
+echo Building with Rojo...
+aftman run rojo build -o PBAST.rbxm
 
 ENDLOCAL

@@ -12,3 +12,11 @@ multiple_statements = "allow"
 unused_variable = "allow"
 unscoped_variables = "allow"
 shadowing = "allow"
+
+[parser]
+allow_declaration_files = true
+
+[lexer]
+# Explicitly set this if you are using modern Luau features 
+# common in newer Adonis modules.
+language = "luau"

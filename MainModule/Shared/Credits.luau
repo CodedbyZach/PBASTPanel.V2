@@ -1,13 +1,7 @@
 return {
+    
     Astra = {
-        { Text = "krampuszc", Desc = "Founder of Astra Incorporated + Astra Maintainer" },
-		{ Text = "8ch99", Desc = "Astra Maintainer, helped with a lot of code" },
-		{ Text = "Purple_Creativity", Desc = "Astra Maintainer" },
-		{ Text = "Coasterteam", Desc = "Kronos Developer, Helped with datastore fixes" },
-        { Text = "H0nzzzz", Desc = "Helped with some code, ideas and testing" },
-        { Text = "Irreflexive", Desc = "Kronos Developer (Track command etc)" },
-        { Text = "TheDiamondWolf1960", Desc = "Helped with some code, ideas and testing" },
-		{ Text = "imskyyc", Desc = "For their custom kick message functions from public kronos" }
+        { Text = "ZmanDem7", Desc = "PBASTPanel Lead Maintainer + PBASTPanel Lead Developer" }
     },
     Adonis = {
         { Text = "Sceleratis/Davey_Bones", Desc = "Made Adonis & EISS" },

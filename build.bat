@@ -18,7 +18,7 @@ IF %ERRORLEVEL% NEQ 0 (
 echo Checking for lint errors with %SELENE_COMMAND% from ./Loader and ./MainModule 
 %SELENE_COMMAND% ./MainModule ./Loader
 
-echo Running %ROJO_COMMAND% build -o Astra.rbxm
-%ROJO_COMMAND% build -o Astra.rbxm
+echo Running %ROJO_COMMAND% build -o PBAST.rbxm
+%ROJO_COMMAND% build -o PBAST.rbxm
 
 ENDLOCAL

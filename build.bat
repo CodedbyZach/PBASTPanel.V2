@@ -2,14 +2,14 @@
 SETLOCAL
 
 echo Checking for lint errors with Selene...
-aftman run selene ./MainModule ./Loader
+call selene ./MainModule ./Loader
 
 if %ERRORLEVEL% NEQ 0 (
-    echo Linting failed.
+    echo Linting failed!
     exit /b %ERRORLEVEL%
 )
 
 echo Building with Rojo...
-aftman run rojo build -o PBAST.rbxm
+call rojo build -o PBAST.rbxm
 
 ENDLOCAL

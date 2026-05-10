@@ -49,4 +49,4 @@ The purpose of this repository is to allow others to contribute and make improve
 Read the [contributing guide](https://github.com/Astra-Corporation/Astra.Admin/blob/master/CONTRIBUTING.md) to get a better understanding of our development process and workflow, along with answers to common questions related to contributing to Adonis.
 
 
-This requires, selene, foreman, and rojo.
+This requires, selene, foreman, aftman, and rojo.
